@@ -162,3 +162,12 @@ df.to_csv('results-mjkim-v4.csv', index=False, header=True)
 label과 이름이 적힌 csv 파일을 불러온 뒤 이를 이용해 predict값을 label로 바꿔줍니다.<br>
 (numpy array로 변환하니 1번 label이 잘려서 따로 처리해주었습니다..)<br>
 그 후 csv 파일로 변환하여 제출하였습니다.
+
+| level| codebook size | stepsize | accuracy |
+|:---:|:---:|:---:|:---:|
+|0|200|4|32|
+|1|200|4|48|
+|2|200|4|57|
+|0|600|8|46|
+|1|600|8|51|
+|2|600|8|57|

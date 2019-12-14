@@ -21,14 +21,11 @@ scene categories, CVPR 2006 </a>기반 BoW 코딩.<br>
 <br>
 
 ## Table of Contents
-* Presentation
-* Directory/File Structure Diagram
-* Execution environment
-* Execution screen
-* How to execute
-* How to contribute
+* 주제
+* 프로그램 설명
+* 실행 환경
+* 기여 방법
 * License
-* FAQ
 * Contributer's Information
 
 <br>

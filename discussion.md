@@ -73,19 +73,23 @@ kmeans = clusterFeatures(all_train_desc, 600)
 ## SPM으로 histogram 구하기
 ```python
 def getImageFeaturesSPM(L, img, kmeans, k):
-    W = img.shape[1]
-    H = img.shape[0]   
+    W = 256
+    H = 256
+    step_size=8
+    W_des = int(W/step_size)
+    H_des = int(H/step_size)  
     h = []
+
+    img = img.reshape(H_des, W_des, 128)
     for l in range(L+1):
         w_step = math.floor(W/(2**l))
         h_step = math.floor(H/(2**l))
         x, y = 0, 0
         for i in range(1,2**l + 1):
             x = 0
-            for j in range(1, 2**l + 1):                
-                desc = computeSIFT(img[y:y+h_step, x:x+w_step])                
-                predict = kmeans.predict(desc)
-                histo = np.bincount(predict, minlength=k).reshape(1,-1).ravel()
+            for j in range(1, 2**l + 1):
+                desc = X_sift[y:y+h_step, x:x+w_step, :].reshape(-1, 128)
+                histo = input_vector_encoder(desc, kmeans.cluster_centers_)
                 weight = 2**(l-L)
                 h.append(weight*histo)
                 x = x + w_step

@@ -26,6 +26,7 @@ scene categories, CVPR 2006 </a>기반 BoW 코딩.<br>
 * 실행 환경
 * 기여 방법
 * License
+* 
 * Contributer's Information
 
 <br>
@@ -217,7 +218,10 @@ label과 이름이 적힌 csv 파일을 불러온 뒤 이를 이용해 predict�
 Open-source under [MIT license](https://github.com/sejongresearch/EmojiRecommend/blob/master/LICENSE)
 <br><br><br>
 
-## 6. Contributor's Information
+## 6. FAQ
+FAQ는 [issue #3](https://github.com/min942773/PR_Project/issues/3)를 통해 운영되고 있습니다.
+
+## 7. Contributor's Information
 | 이름| 학과 | Github | Email |
 |:---:|:---:|:---:|:---:|
 |김민주|소프트웨어학과|[@min942773](https://github.com/min942773)|min942773@gmail.com|

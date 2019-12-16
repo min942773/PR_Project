@@ -26,7 +26,7 @@ scene categories, CVPR 2006 </a>기반 BoW 코딩.<br>
 * 실행 환경
 * 기여 방법
 * License
-* 
+* FAQ
 * Contributer's Information
 
 <br>
